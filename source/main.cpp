@@ -1,15 +1,11 @@
 #include <iostream>
+#include "dog.h"
+#include "operations.h"
 
-using namespace std;
+int main(){
 
-int add(int a,int b)
-{
-    return a+b;
-}
-
-int main()
-{
-    cout << "Hello from C++ with CMake"<<endl;
-    cout << "Sum = "<< add(7,5)<<endl;
+    Dog dog1("Flitzy");
+    dog1.print_info();
+    
     return 0;
 }
