@@ -6,7 +6,7 @@ file(GLOB_RECURSE SOURCE_FILES src/*.cpp)
 add_executable(test.exe main.cpp ${SOURCE_FILES})
 
 #Target          
-#add_executable(test.exe main.cpp)
+#add_executable(test.exe main.cpp src/dog.cpp src/operations.cpp)
 
 target_compile_features(test.exe PRIVATE cxx_std_20)
 target_include_directories(test.exe PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
